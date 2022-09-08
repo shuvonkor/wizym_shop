@@ -1,28 +1,33 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: 'Ubuntu Condensed', sans-serif;
 }
+
 /* navigaion menu*/
 
-nav{
+nav {
     background-color: white;
 }
-.logo-section{
+
+.logo-section {
     cursor: pointer;
 }
-.navication-container{
+
+.navication-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 7px 5%;
 }
-.nav-menu{
-}
-.nav-menu li{
+
+.nav-menu {}
+
+.nav-menu li {
     list-style-type: none;
     display: inline-block;
     padding: 0 2rem;
@@ -30,37 +35,43 @@ nav{
     font-size: 1rem;
     cursor: pointer;
 }
+
 /* search button  */
-.search-button-container{
+.search-button-container {
     cursor: pointer;
     display: flex;
 }
-.search-button-container input{
+
+.search-button-container input {
     outline: none;
     border: none;
     background: transparent;
     font-size: 1.1rem;
     width: 80px;
 }
-.search-button-container a .fas{
+
+.search-button-container a .fas {
     font-size: 15px;
     color: black;
     padding: 0 7px;
 }
+
 /* hamburger menu */
-.hamburger{
+.hamburger {
     cursor: pointer;
     margin-left: 25px;
 }
-.bar{
+
+.bar {
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
     background-color: black;
 }
+
 /* main content design  */
-.banner-container{
+.banner-container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.4)), url(/Asset/background.jpg);
     height: 100vh;
     width: 100%;
@@ -70,40 +81,47 @@ nav{
     /* overflow: hidden; */
     position: relative;
 }
-.header-content{
+
+.header-content {
     position: absolute;
     color: white;
     top: 35%;
     left: 25%;
 }
+
 /* main content text */
-.header-content h3{
-    font-family: 'Pacifico', cursive; 
+.header-content h3 {
+    font-family: 'Pacifico', cursive;
     font-weight: 100;
     font-size: 2rem;
     font-style: italic;
     padding-bottom: 25px;
     letter-spacing: .2rem;
 }
-.header-content h1{
+
+.header-content h1 {
     font-size: 5rem;
     padding-bottom: 30px;
     letter-spacing: .5rem;
 }
-.header-content p{
+
+.header-content p {
     font-size: 1.5rem;
     padding-bottom: 50px;
     line-height: 2rem;
     letter-spacing: .1rem;
 }
-.header-content .text-design{
+
+.header-content .text-design {
     display: block;
 }
+
 /* main content buttom */
-.header-content a{
+.header-content a {
     text-decoration: none;
 }
-.read-more-btn{
+
+.read-more-btn {
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -114,37 +132,551 @@ nav{
     background: transparent;
     color: #fff;
 }
-/* form wizym section
-.form-wizym{
+
+/* form wizym section  */
+.form-wizym-container {
     background-color: rgb(236, 234, 234);
-}
-.form-wizym-container{
-    margin-top: 20px  ;
     display: flex;
-    
-    align-items: center;
-    
-    margin: auto;
+    justify-content: center;
+    gap: 5rem;
     width: 100%;
+    padding-bottom: 70px;
 }
-.form-wizym-right-content{
+
+.form-wizym-left-content {
+    margin-top: 100px;
     width: 30%;
 }
-.form-wizym-address p{
+
+.form-wizym-left-content img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.form-wizym-right-content {
+    margin-top: 100px;
+    width: 30%;
+}
+
+.form-wizym-address p {
     font-size: 20px;
-} */
+}
 
+.form-wizym-text h3 {
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+    color: rgb(248, 29, 29);
+    letter-spacing: 2px;
+}
 
-/* card design  */
+.form-wizym-text h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    padding-bottom: 12px;
+    letter-spacing: .3rem;
+}
 
-.card-container {
+.form-wizym-text p {
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.form-wizym-address span {
+    display: block;
+    margin-top: 8px;
+}
+
+.form-wizym-address p {
+    font-size: 1.2rem;
+}
+
+/* Popular product of this month  */
+.poular-product-container {
+    width: 100%;
+    padding-top: 100px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.poular-product-container h3 {
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+    color: rgb(248, 29, 29);
+    letter-spacing: 2px;
+}
+
+.poular-product-container h2 {
+    font-weight: 400;
+    font-size: 2.1rem;
+    padding-bottom: 12px;
+    letter-spacing: .2rem;
+}
+
+.popular-product-cart {
     display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.popular-product-1 {
+    border: 2px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.popular-product-1 p {
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+
+.popular-product-1 span {
+    color: red;
+    font-size: 1.4rem;
+}
+
+.popular-product-1 .old-price {
+    text-decoration: line-through;
+    font-size: 1rem;
+    color: rgb(125, 123, 123);
+    padding-left: 8px;
+}
+
+.poular-product-container a {
+    text-decoration: none;
+    color: rgb(252, 9, 9);
+    border: 2px solid rgb(252, 9, 9);
+    padding: 11px 40px;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+/* deal of the week  */
+.deal-of-the-week-container {
+    width: 100%;
+    background-image: url(/Asset/background\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+
+}
+
+.deal-of-the-week-container h3 {
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+    color: rgb(248, 29, 29);
+    letter-spacing: 2px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.deal-of-the-week-container h2 {
+    font-weight: 400;
+    font-size: 2.1rem;
+    padding-bottom: 12px;
+    letter-spacing: .2rem;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.deal-week-content {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 75%;
+    gap: 100px;
+    padding-top: 30px;
+}
+
+/* deal-week-left  */
+.deal-week-left {
+    width: 35%;
+}
+
+.deal-week-left img {
+    overflow: hidden;
+    width: 500px;
+}
+
+/* time-count  */
+.time-count {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.time-count div {
+    flex-basis: 100px;
+    text-align: center;
+    border: 2px dotted red;
+    margin: 0 5px;
+    padding: 10px 0;
+}
+
+.time-count div p {
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+
+.time-count div span {
+    font-size: 18px;
+}
+
+/* Deal of the week right content  */
+.deal-week-right {
+    width: 35%;
+}
+
+.deal-week-right h2 {
+    text-align: left;
+    font-weight: 400;
+    font-size: 2.1rem;
+    padding-bottom: 12px;
+    letter-spacing: .2rem;
+}
+
+.deal-week-right p {
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.deal-week-right span {
+    color: rgb(242, 24, 24);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.deal-week-right button {
+    display: block;
+    background: transparent;
+    padding: 9px 30px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border: 2px solid red;
+    margin-top: 15px;
+}
+
+/* our top product  */
+.product-container {
+    width: 70%;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 120px 0;
+}
+
+.product-container h1 {
+    font-size: 2rem;
+    font-weight: 200;
+    color: rgb(77, 75, 75);
+    margin-bottom: 40px;
+}
+
+.product-container h1 i {
+    font-size: 18px;
+    padding: 8px;
+    border: 2px solid rgb(203, 199, 199);
+    border-radius: 50%;
+}
+
+.product-container h1 span {
+    content: 'fuck';
+}
+
+.product-container img {
+    width: 35px;
+    height: 80px;
+}
+
+.product-container .product-img {
+    border: 2px solid rgb(205, 198, 198);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px 25px;
+    margin-bottom: 30px;
+
+}
+
+.product-container h3,
+p {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.product-container p {
+    margin: 18px 0;
+    color: rgb(244, 22, 22);
+}
+
+.product {
+    display: flex;
+    gap: 10px;
+}
+
+/* Upcoming Events */
+.oucoming-events-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.8)), url(/Asset/backgroun\ 3.jpg);
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 90px 0;
+}
+
+.oucoming-events-container h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: rgb(251, 17, 17);
+    letter-spacing: 2px;
+    margin: auto;
+    text-align: center;
+}
+
+.oucoming-events-container h1 {
+    font-weight: 400;
+    font-size: 3rem;
+    padding-bottom: 12px;
+    letter-spacing: .2rem;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.upcomming-event {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 100px;
+    width: 90%;
+    margin: auto;
+    border: 2 px sold tomato;
+}
+
+.event-date {
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.event-date p {
+    background-color: white;
+    color: rgb(246, 30, 30);
+    padding: 50px 0;
+    width: 150px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.event-date p span {
+    display: block;
+    color: black;
+}
+
+.event-text {
+    text-align: center;
+    margin: auto;
+    line-height: 30px;
+    font-size: 1.5rem;
+
+}
+
+.event-text p {
+    padding: 40px;
+}
+
+.event-text h4 {
+    color: rgb(233, 56, 56);
+    font-size: 2rem;
+}
+
+/* news latest  */
+.news-latest-container {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    padding-top: 120px;
+
+}
+
+.news-latest-container h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    font-weight: 100;
+    color: rgb(251, 17, 17);
+    letter-spacing: 2px;
+}
+
+.news-latest-container h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    padding-bottom: 12px;
+    letter-spacing: .4rem;
+    padding-bottom: 120px;
+}
+
+.news-latest-contnt {
+    display: flex;
+    gap: 50px;
+    width: 90%;
+    margin: auto;
     justify-content: center;
 }
 
-.card-1 ,.card-2{
-width: 600px;
+.news-latest-left {
+    width: 40%;
 }
 
+.news-latest-left img {
+    width: 100%;
+    padding: 30px 0;
+}
 
- /*  */
+.news-latest-left-text {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.news-latest-left-text h5 {
+    color: rgb(239, 33, 33);
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.news-latest-left-text p {
+    text-align: justify;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.news-latest-left-text span {
+    font-size: 1.4rem;
+    color: rgb(135, 128, 128);
+}
+
+.news-latest-left-text a {
+    text-decoration: none;
+    color: rgb(235, 34, 34);
+    display: block;
+    padding: 20px 0;
+    font-size: 1.3rem;
+    letter-spacing: 4px;
+}
+
+.news-latest-right {
+    width: 40%;
+    text-align: left;
+}
+
+.news-latest-right-text {
+    padding: 20px 0;
+    border-bottom: 1px solid red;
+}
+
+.news-latest-right-text h6 {
+    font-size: 1.4rem;
+    color: red;
+    letter-spacing: 2px;
+    font-style: italic;
+    margin: 15px 0;
+}
+
+.news-latest-right-text p {
+    font-size: 1.6rem;
+    color: rgb(45, 38, 38);
+    letter-spacing: 2px;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.news-latest-right-text span {
+    font-size: 1.4rem;
+    color: rgb(169, 165, 165);
+    letter-spacing: 2px;
+    font-style: italic;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.footer-container {
+    background-image: url(/Asset/background\ 2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: auto;
+}
+
+.footer-logo {
+    padding: 20px;
+}
+
+.social-icon {
+    margin-bottom: 15px;
+}
+
+.social-icon a {
+    padding: 0 20px;
+}
+
+.social-icon i:hover {
+    color: rgb(31, 28, 28);
+}
+
+.social-icon a i {
+    font-size: 1.3rem;
+    color: rgb(163, 160, 160);
+}
+
+.footer-container h3 {
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding: 20px;
+}
+
+.footer-container input {
+    padding-right: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 15px 0;
+    padding-left: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.footer-nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    cursor: pointer;
+    border-right: 2px solid black;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: rgb(92, 89, 89);
+}
+.footer-container p{
+    font-size: 1.4rem;
+    font-weight: 200;
+    padding: 20px;
+    letter-spacing: 2px;
+    color: rgb(79, 72, 72);
+}
